@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Roboto',Oxygen;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #81d9ff;
+}
+button,
+a {
+  box-sizing: border-box;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.skipcontent {
+  background-color: #62cdff;
+  border-radius: 3px;
+  color: white;
+  font-weight: 500;
+  left: 0;
+  line-height: 44px;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  top: -50px;
+  transition: 0.35s;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 1500;
+}
+
+.skipcontent:focus {
+  top: 30px;
+}
+
+header {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 #aa77ff;
+  background: linear-gradient(to right, #62cdff, #aa77ff);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+img {
+  height: 120px;
+  width: 120px;
+}
+
+.nav__menu {
+  width: max-content;
+  height: 100%;
+}
+
+.nav__menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.nav__menu ul li {
+  padding: 0;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  font-size: 17x;
+  padding: 0.8rem;
+}
+
+.nav__menu ul li:hover {
+  color: #aa77ff;
+}
+
+.hero-container {
+  min-height: 380px;
+  position: relative;
+  background: url("../public/images/heros/banner.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.hero-container .hero-content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-text {
+  position: center;
+  color: white;
+  font-weight: bold;
+  min-height: 77px;
+  min-height: 77px;
+}
+.search-container {
+  background-color: #fff;
+  border-radius: 0px 130px;
+  padding: 10px 30px;
+  display: flex;
+}
+.search-container input[type="text"] {
+  flex: 1;
+  font-size: 16px;
+  border-radius: 5px 10px;
+  border: none;
+  height: 44px;
+  width: 44px;
+}
+.karunia-container input[type="text"] {
+  padding: 10px 20px;
+  border-radius: 9px;
+}
+
+.search-container button[type="submit"] {
+  background-color: #62cdff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 44px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  min-height: 45px;
+  min-width: 45px;
+}
+
+button:focus {
+  outline: 4px dashed;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+input:focus {
+  outline: 4px dashed #aa77ff;
+}
+
+.main-karunia_restaurants {
+  margin: 60px auto;
+}
+
+.karunia-main-label {
+  margin: auto;
+  width: max-content;
+  font-size: 22px;
+}
+
+.list-karunia-restaurants {
+  margin-top: 50px;
+  text-align: left;
+  display: grid;
+  grid-gap: 16px;
+}
+
+.Karunia_resto {
+  margin: 60px auto;
+}
+.content {
+  position: relative;
+}
+
+.list-karunia-restaurants {
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+}
+
+.karunia-item {
+  width: 290px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  margin-right: 20px;
+  background-color: #fff;
+}
+.karunia-item:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 8px 16px rgb(38, 38), 38, 0.2;
+  top: -8px;
+  border: 1px solid #cccccc;
+  background-color: #aa77ff;
+}
+
+.karunia-item:hover {
+  top: -4px;
+}
+
+.resto-title {
+  display: flex;
+  justify-content: space-between;
+  width: 44px 44px;
+}
+
+.karunia-item_image {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 12px;
+}
+
+.karunia-item_city {
+  color: black;
+  padding: 0 7px 0 17px;
+}
+
+.karunia-item_rating {
+  color: orange;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 0 5px;
+  padding: 2px 3px 2px 3px;
+  border-radius: 5px;
+}
+
+.karunia-item_name {
+  font-weight: bold;
+  font-size: 23px;
+  margin-top: 16px;
+  transition: 0.3s opacity;
+  padding: 0 16px 0 16px;
+}
+
+.karunia-item_name:hover {
+  opacity: 0.7;
+}
+
+.karunia-item_name {
+  color: #aa77ff;
+  font-size: 23px;
+}
+
+.karunia-item_description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 15px 14px;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: black;
+  text-decoration: none;
+}
+
+.customreview-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.customreview-card__header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #aa77ff;
+}
+
+.customreview-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.customreview-card__username {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.customreview-card__rating {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fbbc05;
+}
+
+.customreview-card__body {
+  padding: 16px;
+}
+
+.customreview-card__review {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.customreview-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #f5f5f5;
+}
+
+.customreview-card__date {
+  margin: 0;
+  font-size: 14px;
+  color: #757575;
+}
+
+.customreview-card__button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #62cdff;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.customreview-card__button:hover {
+  background-color: #c9eeff;
+}
+
+.customreview-card__button:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+footer {
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 #aa77ff;
+  background: linear-gradient(to right, #62cdff, #aa77ff);
+  padding: 19px 0;
+}
+.restaurant {
+  width: 100%;
+}
+
+.restaurant-detail__wrapper h4 {
+  margin: 0;
+}
+
+.restaurant-detail__rating {
+  margin-right: 15px;
+}
+
+.restaurant-detail__category {
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 5px 20px;
+  color: white;
+}
+
+.restaurant-detail__thumbnail {
+  width: 100%;
+}
+
+.karunia-detail__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #62cdff;
+  box-shadow: 0px 0px 10px #aa77ff;
+}
+
+.foods,.drinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.foods h3,.drinks h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.foods ul,.drinks ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.foods li,.drinks li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+ min-width: 44px;
+ min-height: 44px;
+}
+
+.detail {
+  display: grid;
+  grid-gap: 1.545em;
+  font-size: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.detail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.detail-name {
+  display: inline-block;
+  margin: 0;
+  color: #aa77ff;
+  font-size: 24px;
+}
+
+.detail-name-rating {
+  display: inline-block;
+  margin: 0;
+  color: #fbbc05;
+}
+.detail-name-address {
+  display: inline-block;
+  margin: 0;
+  color: black;
+  font-style: italic;
+}
+
+.detail-descripsi {
+  text-align: justify;
+  color: black;
+  margin-bottom: 0.5em;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.category {
+  color: black;
+  margin-right: 2px;
+  text-align: left;
+  height: 50px;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px;
+}
+
+.img-container {
+  margin-bottom: 16px;
+}
+
+.karunia-item_image-container {
+  width: 810px;
+  height: 540px;
+  border-radius: 8px;
+}
+
+.detail-info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.karunia-restorans-name {
+  margin-bottom: 8px;
+}
+
+.detail-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.detail-name-address,.detail-name-rating,.detail-descripsi {
+  margin: 0;
+}
+
+.detail-category {
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.karunia-not_found {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.karunia-item_image-container {
+  width: 460px;
+  height: 450px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-info h4 {
+  padding-top: 19px;
+  color: black;
+  font-size: 1.6em;
+  margin: 0;
+  text-align: left;
+}
+
+.detail-info li {
+  color: black;
+  position: relative;
+  display: block;
+  margin-top: 9px;
+}
+
+.karunia-restorans-name {
+  font-size: 19px;
+  text-align: left;
+}
+.resto-address,.resto-category {
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+
+.resto-rating {
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+  color: #fbbc05;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aa77ff;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.add_to_cart {
+  background-color: #aa77ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+  border-radius: 0 30px;
+  transition: background-color 0.3s ease;
+}
+
+.add_to_cart:hover {
+  background-color: #62cdff;
+}
+
+.add_to_cart:active {
+  background-color: #62cdff;
+}
+
+ .drink-checkbox{
+  min-width: 44px;
+  min-height: 44px;
+
+}
+.food-checkbox{
+min-width: 44px;
+min-height: 44px;
+}

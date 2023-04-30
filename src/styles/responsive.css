@@ -1,0 +1,171 @@
+@media only screen and (min-width:412px) and (max-width:675px){
+  nav {
+    padding: 0 100px;
+  }
+  .main-karunia_restaurants {
+    padding: 0 100px;
+  }
+  .list-karunia-restaurants {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 1em;
+  }
+}
+  .restaurant-detail__info,
+  .karunia-detail__menu-list,
+  .restaurant-detail__review {
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 50px;
+    margin: 0 auto;
+  }
+  .detail-review {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .karunia-item_image-container {
+    max-width: 810px;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0.5rem;
+  }
+  .nav-container {
+    display: block;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+  }
+  .nav__menu ul {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_menu {
+    font-size: 19px;
+    display: block;
+  }
+  .nav__menu {
+    justify-content: start;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .main-karunia_restaurants {
+    padding: 25px 20px;
+  }
+  .hero-container .hero-content-container {
+    text-align: left;
+    line-height: 1.5em;
+  }
+  .skipcontent {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .header_menu {
+    display: none;
+  }
+  section {
+    margin-bottom: 80px;
+  }
+
+  .karunia-main-label {
+    font-size: 26px;
+  }
+
+  .list-karunia-restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .karunia-item_name {
+    font-size: 22px;
+  }
+  .main-karunia_restaurants {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    padding: 0 100px;
+  }
+  .main-karunia_restaurants {
+    padding: 0 100px;
+  }
+  .list-karunia-restaurants {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 1em;
+  }
+}
+  .restaurant-detail__info,
+  .karunia-detail__menu-list,
+  .restaurant-detail__review {
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 50px;
+    margin: 0 auto;
+  }
+  .detail-review {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .karunia-item_image-container {
+    max-width: 810px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    nav {
+      padding: 0 100px;
+    }
+    .main-karunia_restaurants {
+      padding: 0 100px;
+    }
+    .list-karunia-restaurants {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .container-info {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      grid-gap: 1.5em;
+      margin-top: 1em;
+    }
+  }
+    .restaurant-detail__info,
+    .karunia-detail__menu-list,
+    .restaurant-detail__review {
+      margin-bottom: 5px;
+      display: grid;
+      grid-template-columns: repeat(1, minmax(300px, 1fr));
+      gap: 50px;
+      margin: 0 auto;
+    }
+    .detail-review {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .karunia-item_image-container {
+      max-width: 810px;
+    }
+
+  
